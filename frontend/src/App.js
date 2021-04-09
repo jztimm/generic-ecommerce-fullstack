@@ -1,10 +1,15 @@
-import './App.css';
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="App">
-      General-Merch
-    </div>
+    <>
+      <Header />
+      <main>
+        <h1>Welcome to General Merch</h1>
+      </main>
+      <Footer />
+    </>
   );
 }
 
