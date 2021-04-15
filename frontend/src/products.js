@@ -44,7 +44,7 @@ const products = [
     description: "A sweet new skateboard for a sweet new ride",
     category: 'Electronics',
     inStockCounter: 5,
-    rating: 3,
+    rating: 3.5,
     reviewsNum: 8,
   },
   {
