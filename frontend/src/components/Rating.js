@@ -33,4 +33,12 @@ Rating.defaultProps = {
   color: '#f8e825'
 }
 
+// propTypes provides clear, enduring assertions as to the type of data a React component needs to render properly.
+// Rating.propTypes = {
+//   value: PropTypes.number.isRequired,
+//   text: PropTypes.string.isRequired,
+//   color: PropTypes.string
+// }
+
+
 export default Rating
