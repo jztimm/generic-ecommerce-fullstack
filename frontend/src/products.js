@@ -52,7 +52,7 @@ const products = [
     name: 'Samsung - CHG9 Series C49HG90DMN 49" HDR LED Curved FHD FreeSync Monitor - Matte dark blue black',
     price: 899.99,
     brand: 'Samsung',
-    image: "httpshttps://pisces.bbystatic.com/image2/BestBuy_US/images/products/6115/6115611_sd.jpg;maxHeight=640;maxWidth=550://hyperice.com/media/wysiwyg/HV_Render.png",
+    image: "https://cdn3.centrecom.com.au/images/upload/0051495_0.jpeg",
     description: "A beautiful 4k Monitor",
     category: 'Electronics',
     inStockCounter: 1,
