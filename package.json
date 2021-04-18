@@ -1,0 +1,27 @@
+{
+  "name": "general-ecommerce-fullstack",
+  "version": "1.0.0",
+  "description": "MERN general merch store",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "history": "^4.10.1",
+    "resolve-pathname": "^3.0.0",
+    "tiny-invariant": "^1.1.0",
+    "value-equal": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jztimm/generic-ecommerce-fullstack.git"
+  },
+  "author": "Jzavier Timm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jztimm/generic-ecommerce-fullstack/issues"
+  },
+  "homepage": "https://github.com/jztimm/generic-ecommerce-fullstack#readme"
+}
