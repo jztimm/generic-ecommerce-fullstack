@@ -10,7 +10,7 @@ connectDB()
 
 const app = express()
 
-// This is a route
+// This is a route to the home
 app.get('/', (req, res) => {
   res.send('API is running...')
 })
