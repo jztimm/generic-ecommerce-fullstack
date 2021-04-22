@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: "1",
     name: "Hyperice | Hypervolt Percussive Massage Device Featuring Quite Glide Technology",
     price: 299.99,
     brand: 'Hyperice',
@@ -12,7 +11,6 @@ const products = [
     reviewsNum: 1,
   },
   {
-    _id: "2",
     name: "Bose - Sleepbuds II — Soothing Sounds and Noise-masking Technology Designed for Better Sleep - White/Silve",
     price: 248.99,
     brand: 'Bose',
@@ -24,7 +22,6 @@ const products = [
     reviewsNum: 3,
   },
   {
-    _id: "3",
     name: "Braun - 6-in-1 Trimmer MGK3221 - Volt Green",
     price: 26.99,
     brand: 'Braun',
@@ -36,7 +33,6 @@ const products = [
     reviewsNum: 10,
   },
   {
-    _id: "4",
     name: "Swagtron - Swagskate Electric Skateboard w/ 6 mi Max Operating Range & 9.3 mph Max Speed - Black",
     price: 105.99,
     brand: 'Swagtron',
@@ -48,7 +44,6 @@ const products = [
     reviewsNum: 8,
   },
   {
-    _id: "5",
     name: 'Samsung - CHG9 Series C49HG90DMN 49" HDR LED Curved FHD FreeSync Monitor - Matte dark blue black',
     price: 899.99,
     brand: 'Samsung',
