@@ -1,8 +1,8 @@
 node_modules
 
 #data/scripts
-seeder.js
-users.js
+backend/seeder.js
+backend/data/users.js
 
 # misc
 .env
