@@ -1,4 +1,8 @@
-import { PRODUCT_LIST_REQUEST, PRODUCT_LIST_SUCCESS, PRODUCT_LIST_FAIL } from '../constants/productConstants'
+import {
+  PRODUCT_LIST_REQUEST,
+  PRODUCT_LIST_SUCCESS,
+  PRODUCT_LIST_FAIL
+} from '../constants/productConstants'
 
 
 export const productListReducer = (state = {products: []}, action) => {
@@ -8,7 +12,7 @@ export const productListReducer = (state = {products: []}, action) => {
     case PRODUCT_LIST_SUCCESS :
       return { loading: false, products: action.payload }   // Send data in the payload
     case PRODUCT_LIST_FAIL:
-      return { loading: false, errors: action.payload }     // Send error in the payload
+      return { loading: false, error: action.payload }     // Send error in the payload
     default:
       return state
   }

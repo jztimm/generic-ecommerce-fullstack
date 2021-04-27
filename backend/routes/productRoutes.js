@@ -7,13 +7,15 @@ import Product from '../models/productModel.js'
 // @desc Fetch all products
 // @route GET /api/products
 // @access Public
-router.get('/', asyncHandler (async(req, res) => {        // Using express-async-handler below to handle the returned promise
-  // Below products will return a promise and rather than returning that promise, use await instead
-  const products = await Product.find({})
-  
-  // having .send or .json will both send info in it's correct format
-  res.json(products)
-}))
+router.get(
+  '/',
+  asyncHandler (async(req, res) => {        // Using express-async-handler below to handle the returned promise
+    // Below products will return a promise and rather than returning that promise, use await instead
+    const products = await Product.find({})
+    // having .send or .json will both send info in it's correct format
+    res.json(products)
+  })
+)
 
 // @desc Fetch single products
 // @route GET /api/products/:id
