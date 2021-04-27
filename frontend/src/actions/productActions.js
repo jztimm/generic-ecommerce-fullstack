@@ -17,7 +17,7 @@ export const listProducts = () => async (dispatch) => {     // fetch data from a
     })
   } catch (error) {
     dispatch({
-      type: PRODUCT_LIST_ERROR,
+      type: PRODUCT_LIST_FAIL,
       // If we have a custome error msg, use that. If not then use the generic error msg
       payload: error.response && error.response.data.message ? error.response.data.message : error.message
     })
