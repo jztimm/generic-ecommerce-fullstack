@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { CART_ADD_ITEM } from '../constants/cartConstants'
+import { CART_ADD_ITEM, CART_REMOVE_ITEM } from '../constants/cartConstants'
 
 export const addToCart = (id, qty) => async (dispatch, getState) => { // fetch data from api and dispatch actions to the reducer
   const {data} = await axios.get(`/api/products/${id}`)
@@ -22,5 +22,15 @@ export const addToCart = (id, qty) => async (dispatch, getState) => { // fetch d
   to extract data from localStorage, you need to use JSON.parse() to parse it back
   to JavaScript
   */
+  localStorage.setItem('cartItems', JSON.stringify(getState().cart.cartItems))
+}
+
+// Reset localStorage to keep what was in the cart without selected item
+export const removeFromCart = (id) => (dispatch, getState) => {
+  dispatch({
+    type: CART_REMOVE_ITEM,
+    payload: id
+  })
+
   localStorage.setItem('cartItems', JSON.stringify(getState().cart.cartItems))
 }
