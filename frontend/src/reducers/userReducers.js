@@ -1,4 +1,7 @@
 import {
+  USER_DETAILS_FAIL,
+  USER_DETAILS_REQUEST,
+  USER_DETAILS_SUCCESS,
   USER_LOGIN_FAIL,
   USER_LOGIN_REQUEST,
   USER_LOGIN_SUCCESS,
@@ -30,6 +33,20 @@ export const userRegisterReducer = (state = {}, action) => {
     case USER_REGISTER_SUCCESS :
       return { loading: false, userInfo: action.payload }   // Send data in the payload
     case USER_REGISTER_FAIL:
+      return { loading: false, error: action.payload }     // Send error in the payload
+    default:
+      return state
+  }
+}
+
+// Have user initialize as empty obj
+export const userDetailsReducer = (state = { user: {} }, action) => {
+  switch (action.type) {
+    case USER_DETAILS_REQUEST:
+      return { ...state, loading: true }; // keep whatever state was but change loading to true
+    case USER_DETAILS_SUCCESS :
+      return { loading: false, user: action.payload }   // Send data in the payload
+    case USER_DETAILS_FAIL:
       return { loading: false, error: action.payload }     // Send error in the payload
     default:
       return state
