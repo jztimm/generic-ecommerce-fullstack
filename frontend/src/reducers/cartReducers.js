@@ -1,6 +1,14 @@
-import { CART_ADD_ITEM, CART_REMOVE_ITEM } from '../constants/cartConstants'
+import {
+  CART_ADD_ITEM,
+  CART_REMOVE_ITEM,
+  CART_SAVE_SHIPPING_ADDRESS
+} from '../constants/cartConstants'
 
-export const cartReducer = (state = { cartItems: [] }, action) => {
+export const cartReducer = (
+  state = {
+    cartItems: [],
+    shippingAddress: {}
+  }, action) => {
   switch(action.type) {
     case CART_ADD_ITEM:
       // Contains item information
@@ -26,6 +34,12 @@ export const cartReducer = (state = { cartItems: [] }, action) => {
           ...state, // Keep existing state
           // Will only show items !== to x || item select
           cartItems: state.cartItems.filter(x => x.product !== action.payload),
+        }
+      case CART_SAVE_SHIPPING_ADDRESS:
+        return {
+          ...state, // Return initial state
+          // Will set to data sent from the form
+          shippingAddress: action.payload
         }
     default:
       return state
