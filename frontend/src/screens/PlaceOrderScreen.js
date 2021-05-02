@@ -38,6 +38,7 @@ const PlaceOrderScreen = ({history}) => {
     // eslint-disable-next-line
   }, [history, success])
 
+  // Placing an order works
   const placeOrderHandler = () => {
     dispatch(
       createOrder({
